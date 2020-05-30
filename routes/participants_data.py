@@ -38,6 +38,7 @@ def create_participant(participant_id, block_id, prolific_id):
      participant.game_id            = int(content['game_id'])
      participant.confidence         = str(content['confidence'])
      participant.reaction_time_conf = str(content['reaction_times_conf'])
+     participant.confidence_init    = str(content['confidence_init'])
      
 
      # Add the performance metrics here 

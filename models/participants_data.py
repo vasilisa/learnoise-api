@@ -29,7 +29,9 @@ class ParticipantsData(BaseObject, Model):
     unchosen_rewards   = Column(Text(length=10000), nullable=False)    
     reaction_time      = Column(Text(length=10000), nullable=False)
     confidence         = Column(Text(length=10000), nullable=False)
-    reaction_time_conf = Column(Text(length=10000), nullable=False)   
+    reaction_time_conf = Column(Text(length=10000), nullable=False) 
+    confidence_init    = Column(Text(length=10000), nullable=False)
+      
     
     # Related to the performances: 
     # Add the performance metrics here 
@@ -70,6 +72,10 @@ class ParticipantsData(BaseObject, Model):
 
     def get_confidence(self): 
         return str(self.confidence)
+
+    def get_confidence_init(self): 
+        return str(self.confidence_init)
+
 
     def get_confidence_rt(self): 
         return str(self.reaction_times_conf)
