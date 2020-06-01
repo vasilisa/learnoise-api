@@ -1,1 +1,1 @@
-web: run_gunicorn.sh 
+web: sh run_gunicorn.sh 
