@@ -8,10 +8,3 @@ config = ConfigParser()
 config.read(configfilepath)
 
 
-# database specifications
-# db_name   = 'covid19'
-# db_host   = 'localhost'
-# db_pwd    = 'pwd'
-# db_user   = 'root'
-
-

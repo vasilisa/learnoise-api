@@ -1,1 +1,1 @@
-web: sh run_gunicorn.sh 
+web: gunicorn --workers=4 app:app
