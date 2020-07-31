@@ -34,6 +34,8 @@ def create_participant(participant_id, block_id, prolific_id):
      participant.chosen_positions   = str(content['chosen_positions'])
      participant.chosen_rewards     = str(content['chosen_rewards'])
      participant.unchosen_rewards   = str(content['unchosen_rewards'])
+     participant.reward1            = str(content['reward_1'])
+     participant.reward2            = str(content['reward_2'])
      participant.reaction_time      = str(content['reaction_times'])
      participant.game_id            = int(content['game_id'])
      participant.confidence         = str(content['confidence'])
