@@ -14,6 +14,7 @@ class ParticipantsQuestionData(BaseObject, Model):
 
     participant_id          = Column(BigInteger,nullable=False)
     prolific_id             = Column(VARCHAR(length=200))
+    game_id                 = Column(BigInteger,nullable=False)
     date                    = Column(VARCHAR(length=100),nullable=False) # the date at which the questionnaire has been answered   
     date_time_survey_start  = Column(VARCHAR(length=200))
     date_time_survey_end    = Column(VARCHAR(length=200))

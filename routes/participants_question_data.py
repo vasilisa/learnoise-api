@@ -23,6 +23,7 @@ def create_question_participant(participant_id,block_id,prolific_id):
      participant.question_ids    = str(content['question_ids'])
      participant.answers         = str(content['answers'])
      participant.date            = content['date']
+     participant.game_id         = int(content['game_id'])
      
      participant.date_time_survey_start  = str(content['date_time_survey_start'])
      participant.date_time_survey_end    = str(content['date_time_survey_end'])
